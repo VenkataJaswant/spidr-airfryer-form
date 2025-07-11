@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+  overflow: hidden;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+h2 {
+  text-align: center;
+  color: #00ffff;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+input {
+  background: transparent;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  color: #fff;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input:focus {
+  outline: none;
+  border-color: #00ffff;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
+}
+
+button {
+  padding: 14px;
+  background-color: #00ffff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #00cccc;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
+}
+/* LEFT-SIDE SPIDER */
+.side-spider {
+  position: fixed;
+  top: 30%;
+  left: 4%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  z-index: 1;
+  pointer-events: none;
 }
 
-.App-link {
-  color: #61dafb;
+.spider-string {
+  width: 2px;
+  height: 120px;
+  background: #ffffff;
+  animation: drop 4s infinite alternate ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.spider {
+  width: 40px;
+  height: 40px;
+  background: url('https://img.icons8.com/ios-filled/50/ffffff/spider.png') no-repeat center;
+  background-size: contain;
+  animation: wiggle 2s infinite ease-in-out;
+}
+
+@keyframes drop {
+  0% { height: 90px; }
+  100% { height: 120px; }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(5deg); }
+}
+/* .success-popup {
+  background-color: #00ffcc;
+  color: #000;
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-top: 20px;
+  animation: fadeSlideIn 0.4s ease-in-out;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
+} */
+
+.toggle-eye {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+  color: #aaa;
 }
