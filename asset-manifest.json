@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/spidr-airfryer-form/static/css/main.93ac1da0.css",
-    "main.js": "/spidr-airfryer-form/static/js/main.c8dbb35f.js",
+    "main.css": "/spidr-airfryer-form/static/css/main.d0e3c46f.css",
+    "main.js": "/spidr-airfryer-form/static/js/main.9e9b89aa.js",
     "index.html": "/spidr-airfryer-form/index.html",
-    "main.93ac1da0.css.map": "/spidr-airfryer-form/static/css/main.93ac1da0.css.map",
-    "main.c8dbb35f.js.map": "/spidr-airfryer-form/static/js/main.c8dbb35f.js.map"
+    "main.d0e3c46f.css.map": "/spidr-airfryer-form/static/css/main.d0e3c46f.css.map",
+    "main.9e9b89aa.js.map": "/spidr-airfryer-form/static/js/main.9e9b89aa.js.map"
   },
   "entrypoints": [
-    "static/css/main.93ac1da0.css",
-    "static/js/main.c8dbb35f.js"
+    "static/css/main.d0e3c46f.css",
+    "static/js/main.9e9b89aa.js"
   ]
 }
